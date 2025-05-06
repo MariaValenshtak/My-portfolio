@@ -1,0 +1,37 @@
+:root {
+  --lavender: #e3d5ff;         /* м'який, але соковитий світло-фіолетовий */
+  --lavender-dark: #b998ff;    /* насичений середній фіолетовий */
+  --lavender-deep: #935eff;    /* глибокий, яскравий фіолетовий */
+  --text-dark: #3c1770;        /* темно-фіолетовий для читабельного тексту */
+  --white: #ffffff;
+  --shadow: rgba(147, 94, 255, 0.12); /* легка, але помітна тінь з фіолетовим відтінком */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--lavender);
+  color: var(--text-dark);
+}
+
+a {
+  text-decoration: none;
+  color: var(--lavender-deep);
+}
+
+a:hover {
+  text-decoration: underline;
+}

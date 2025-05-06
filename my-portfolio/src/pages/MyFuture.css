@@ -1,0 +1,246 @@
+.future-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: var(--white);
+  color: var(--text-dark);
+  font-family: 'Segoe UI', sans-serif;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px var(--shadow);
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.future-container h1 {
+  color: var(--lavender-deep);
+  margin-bottom: 1.5rem;
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  color: var(--lavender-deep);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+}
+
+/* 🔄 Менш фіолетовий стиль для цитати */
+blockquote {
+  font-size: 1.2rem;
+  font-style: italic;
+  border-left: 4px solid #ccc;
+  padding-left: 1rem;
+  color: #555;
+}
+
+/* 🔄 Менш фіолетовий фон для таймлайну */
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.timeline-item {
+  background-color: #f1f3f9; /* нейтральний світло-блакитний */
+  border-left: 4px solid var(--lavender-dark);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -8px;
+  top: 20px;
+  width: 16px;
+  height: 16px;
+  background-color: var(--lavender-dark);
+  border-radius: 50%;
+}
+
+.year {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: var(--lavender-deep);
+  margin-bottom: 1rem;
+}
+
+.timeline-content {
+  font-size: 1.1rem;
+  color: var(--text-dark);
+}
+
+.memes-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+/* 🔄 Зменшено фіолетовість рамки */
+.meme-item {
+  width: 30%;
+  border: 5px solid var(--lavender);
+  box-shadow:
+  0 8px 20px rgba(142, 128, 194, 0.25),
+  0 4px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.inspiration-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+}
+
+
+/* 🔄 Світлий нейтральний фон */
+.future-steps {
+  background-color: #f9f9fb;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.future-steps h2 {
+  font-size: 2.2rem;
+  color: var(--lavender-deep);
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.future-steps ul {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.future-steps li {
+  background-color: var(--white);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  text-align: center;
+  position: relative;
+}
+
+/* 🔄 Менш фіолетовий hover-ефект */
+.future-steps li:hover {
+  background-color: #4b3d8f;
+  color: var(--white);
+  transform: translateY(-10px);
+}
+
+.future-steps li:hover strong {
+  color: var(--white);
+}
+
+.future-steps li::before {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 4px;
+  background-color: var(--lavender-deep);
+  border-radius: 5px;
+}
+
+.future-steps li strong {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: var(--lavender-dark);
+}
+
+.future-steps li p {
+  font-size: 1rem;
+  color: var(--text-dark);
+  margin-top: 0.8rem;
+}
+
+
+@media (max-width: 768px) {
+  .future-container {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .future-container h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .future-steps ul {
+    grid-template-columns: 1fr; /* з 3 до 1 колонки */
+    gap: 1rem;
+  }
+
+  .future-steps li {
+    padding: 1.2rem;
+  }
+
+  .timeline-item {
+    padding: 1rem;
+  }
+
+  .timeline-content {
+    font-size: 1rem;
+  }
+
+  .year {
+    font-size: 1.2rem;
+  }
+
+  .memes-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .meme-item {
+    width: 90%;
+  }
+
+  .inspiration-image {
+    height: auto;
+    max-height: 300px;
+  }
+
+  blockquote {
+    font-size: 1rem;
+    padding-left: 0.8rem;
+  }
+}

@@ -1,0 +1,27 @@
+.header {
+  background-color: var(--lavender);
+  padding: 1.5rem 2rem;
+  box-shadow: 0 2px 8px var(--shadow);
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: var(--lavender-deep);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background-color: var(--lavender-dark);
+  color: var(--white);
+}
